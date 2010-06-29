@@ -1,0 +1,6 @@
+;; Do we need to compile this?  Determine later after
+;; module system is finalized.
+(compile -s -d0 -O2 doctype.scm -j doctype)
+(install-extension 'doctype 
+ '("doctype.so" "doctype.import.scm")
+ '((documentation "doctype.html") (version 1.2)))

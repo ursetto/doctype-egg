@@ -1,0 +1,10 @@
+;;; doctype.meta -*- Hen -*-
+
+((synopsis
+   "Exports strings corresponding to standard XML (XHTML, HTML) doctypes")
+ (author "Jim Ursetto")
+ (license "Public Domain")
+ (egg "doctype.egg")
+ (category xml)
+ (doc-from-wiki)
+ (files "doctype.scm" "doctype.setup"))
