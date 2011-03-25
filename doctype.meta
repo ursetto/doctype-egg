@@ -7,4 +7,4 @@
  (egg "doctype.egg")
  (category xml)
  (doc-from-wiki)
- (files "doctype.scm" "doctype.setup"))
+ (files "doctype.scm" "doctype.meta" "doctype.release-info" "doctype.setup"))
