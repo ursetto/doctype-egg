@@ -74,12 +74,23 @@
 
 ;; example rules for sxml-transforms
 (define doctype-rules
-  `((html-4.01-strict *preorder* . ,(constantly doctype-html-4.01-strict))
+  `((doctype-html *preorder* . ,(constantly doctype-html))
+    (doctype-html-4.01-strict *preorder* . ,(constantly doctype-html-4.01-strict))
+    (doctype-xhtml-1.0-strict *preorder* . ,(constantly doctype-xhtml-1.0-strict))
+    (doctype-html-4.01-transitional *preorder* . ,(constantly doctype-html-4.01-transitional))
+    (doctype-xhtml-1.0-transitional *preorder* . ,(constantly doctype-xhtml-1.0-transitional))
+    (doctype-html-4.01-frameset *preorder* . ,(constantly doctype-html-4.01-frameset))
+    (doctype-xhtml-1.0-frameset *preorder* . ,(constantly doctype-xhtml-1.0-frameset))
+    (doctype-html-3.2 *preorder* . ,(constantly doctype-html-3.2))
+    (doctype-html-2.0 *preorder* . ,(constantly doctype-html-2.0))
+    ;; deprecated aliases (probably retained for the foreseeable future, though)
+    (html-4.01-strict *preorder* . ,(constantly doctype-html-4.01-strict))
     (xhtml-1.0-strict *preorder* . ,(constantly doctype-xhtml-1.0-strict))
     (html-4.01-transitional *preorder* . ,(constantly doctype-html-4.01-transitional))
     (xhtml-1.0-transitional *preorder* . ,(constantly doctype-xhtml-1.0-transitional))
     (html-4.01-frameset *preorder* . ,(constantly doctype-html-4.01-frameset))
     (xhtml-1.0-frameset *preorder* . ,(constantly doctype-xhtml-1.0-frameset))
     (html-3.2 *preorder* . ,(constantly doctype-html-3.2))
-    (html-2.0 *preorder* . ,(constantly doctype-html-3.2))))
+    (html-2.0 *preorder* . ,(constantly doctype-html-2.0))))
+
 )

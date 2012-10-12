@@ -1,4 +1,4 @@
 (compile -s -d0 -O2 doctype.scm -j doctype)
 (install-extension 'doctype 
  '("doctype.so" "doctype.import.scm")
- '((version 2.0)))
+ '((version 2.1)))
