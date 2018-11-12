@@ -1,0 +1,9 @@
+;;; doctype.meta -*- Hen -*-
+
+((synopsis
+   "Exports strings corresponding to standard XML (XHTML, HTML) doctypes")
+ (author "Jim Ursetto")
+ (license "Public Domain")
+ (category xml)
+ (version "2.1")
+ (components (extension doctype (csc-options "-O2" "-d0"))))

@@ -35,7 +35,10 @@
    html-2.0
 )
 
-(import scheme data-structures)
+(import scheme)
+(cond-expand
+  (chicken-4 (import data-structures))
+  (else (import (chicken base))))
 
 ;; generic html doctype (introduced in HTML5; backward compatible with all known browsers)
 (define doctype-html
