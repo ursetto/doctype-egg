@@ -5,5 +5,5 @@
  (author "Jim Ursetto")
  (license "Public Domain")
  (category xml)
- (version "2.1")
+ (version "2.2")
  (components (extension doctype (csc-options "-O2" "-d0"))))
